@@ -1,0 +1,15 @@
+- Sealed Boxes - you give me an open padlock, I lock message and send
+- Public-key Signatures - I give you key to padlock, lock hash of message
+- Authenticated Encryption - combine the first two!
+- Key Exchange - generate symmetric keys from asymmetric keys.
+- Content Addressable DAG - Great for storing large data graphs
+- Merkle Tree with signed roots - Great for tracking history
+- DHT with derived discovery keys - private peer discovery
+- Using public key as address for cert-less key exchange (xsalsa20 stream)
+- HAMT (hash array mapped trie) log to implement K/V store
+- Multi-writer by authorizing other streams
+- Ring Signatures - someone in the ring signed, but we don't know who. (safe leaks)
+- Deniable Authentication - receiver is in ring, nobody else can verify.
+- Threshold ring signatures - multiple signers cooperate to sign together.
+- Linkable ring signatures - can know if two messages used same signer (still anonymous)
+- Traceable ring signature - detects and reveals multiple messages signed by same (voting)
